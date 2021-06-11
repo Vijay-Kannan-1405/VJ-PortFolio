@@ -1,0 +1,262 @@
+<html>
+    <head>
+        <title>vijay portfolio</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/page.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="main">
+    <div>
+        
+        <div class="header" >
+            <button class="open-button" onclick="openform()"><i class="fa fa-bars"></i></button>
+            <div class="overview" id="overview-form">
+                <div class="overview-data">
+                <button class="close-button" onclick="closeform()"><i class="fa fa-close"></i></button>
+                
+                <div class="li-elements">
+                <li onclick="home()">HOME</li>
+                <li onclick="education()">EDUCATION</li>
+                <li onclick="language()">KNOWN LANGUAGES</li>
+                <li onclick="about()">ABOUT</li>
+                <li onclick="contact()">CONTACT</li>
+                </div>
+
+            </div>
+        </div>
+        <div class="header-stat" id="header-stat" onclick="closeform()">
+            <div class="header-image" id="header-img">
+                <!-- <img src="css/image/vijay.jpg" class="imagevj" /> -->
+                <img id="myImg" class="imagevj" src="css/image/vijay.jpg" alt="vijay" >
+    
+            </div>
+            <h1>Vijay Kannan</h1>
+            <p>"Who you are tommorow began with, what you do today"</p>
+        </div>
+        
+        </div>
+        <div class="folio-main" onclick="closeform()">
+            <div class="folio">
+            <div class="home-folio" id="home-folio">
+                <h1 class="folio-h1">PROFESSIONAL SUMMARY</h1>
+                <table>
+                    <tr>
+                        <td>Six months above experience in Python Developer, design, development, implementation, integration on Web based applications with proficiency in Object Oriented Analysis and Design using HTML ,CSS ,Javascript, Flask, SQL Server.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Also working experience on Waterfall model.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Strong on Object Oriented Programming Languages.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Also Real Time Experience In HTML ,CSS ,Javascript .
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Good analytical, programming, troubleshooting and debugging skills . 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Experience in working on SQL SERVER
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Excellent in learning new technologies. Adapt easily to a new environment. Possess capability to assimilate various technologies to create products with new features & functions.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Hardworking, Smart & Innovative Thinker, a Good Team Player, Quick Learner. 
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+
+                <div>
+                    <button class="previous" id="previous" onclick="previous(0)"><i class="fa fa-angle-left" style="font-size:206px; opacity: 0.4;"></i></button>
+                </div>
+                <div>
+                    <button class="next" id="next" onclick="next(0)"> <i class="fa fa-angle-right" style="font-size:206px; opacity: 0.4;"></i> </button>
+                </div>
+            </div>
+            <div class="edu-folio" id="edu-folio">
+                <p>This is VIJAY</br>
+                    Hii edu
+                </p>
+                <div>
+                    <button class="previous" id="previous" onclick="previous(1)"><i class="fa fa-angle-left" style="font-size:206px; opacity: 0.4;"></i></button>
+                </div>
+                <div>
+                    <button class="next" id="next" onclick="next(1)"> <i class="fa fa-angle-right" style="font-size:206px; opacity: 0.4;"></i> </button>
+                </div> 
+            </div>
+            <div class="lang-folio" id="lang-folio">
+                <p>This is VIJAY</br>
+                    Hii lang
+                </p>
+                <div>
+                    <button class="previous" id="previous" onclick="previous(2)"><i class="fa fa-angle-left" style="font-size:206px; opacity: 0.4;"></i></button>
+                </div>
+                <div>
+                    <button class="next" id="next" onclick="next(2)"> <i class="fa fa-angle-right" style="font-size:206px; opacity: 0.4;"></i> </button>
+                </div>
+            </div>
+            <div class="about-folio" id="about-folio">
+                <p>This is VIJAY</br>
+                    Hii about
+                </p>
+                <div>
+                    <button class="previous" id="previous" onclick="previous(3)"><i class="fa fa-angle-left" style="font-size:206px; opacity: 0.4;"></i></button>
+                </div>
+                <div>
+                    <button class="next" id="next" onclick="next(3)"> <i class="fa fa-angle-right" style="font-size:206px; opacity: 0.4;"></i> </button>
+                </div>
+            </div>
+            <div class="contact-folio" id="contact-folio">
+                <p>This is VIJAY</br>
+                    Hii contact
+                </p>
+                <div>
+                    <button class="previous" id="previous" onclick="previous(4)"><i class="fa fa-angle-left" style="font-size:206px; opacity: 0.4;"></i></button>
+                </div>
+                <div>
+                    <button class="next" id="next" onclick="next(4)"> <i class="fa fa-angle-right" style="font-size:206px; opacity: 0.4;"></i> </button>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        
+    </div>
+    <script>
+        function openform() {
+            document.getElementById("overview-form").style.display = "block";
+            document.getElementById("header-stat").style.left = "35rem";
+            document.getElementById("header-img").style.left = "23rem";
+        }
+        function closeform() {
+            document.getElementById("overview-form").style.display = "none";
+            document.getElementById("header-stat").style.left = "20rem";
+            document.getElementById("header-img").style.left = "8rem";
+        }
+        function closeforms() {
+            document.getElementById("overview-form").style.display = "none";
+            document.getElementById("header-stat").style.left = "20rem";
+            document.getElementById("header-img").style.left = "8rem";
+        }
+        function home() {
+            document.getElementById("home-folio").style.display = "block";
+            document.getElementById("edu-folio").style.display = "none";
+            document.getElementById("lang-folio").style.display = "none";
+            document.getElementById("about-folio").style.display = "none";
+            document.getElementById("contact-folio").style.display = "none";
+            closeform()
+        }
+        function education() {
+            document.getElementById("home-folio").style.display = "none";
+            document.getElementById("edu-folio").style.display = "block";
+            document.getElementById("lang-folio").style.display = "none";
+            document.getElementById("about-folio").style.display = "none";
+            document.getElementById("contact-folio").style.display = "none";
+            closeform()
+        }
+        function language() {
+            document.getElementById("home-folio").style.display = "none";
+            document.getElementById("edu-folio").style.display = "none";
+            document.getElementById("lang-folio").style.display = "block";
+            document.getElementById("about-folio").style.display = "none";
+            document.getElementById("contact-folio").style.display = "none";
+            closeform()
+        }
+        function about() {
+            document.getElementById("home-folio").style.display = "none";
+            document.getElementById("edu-folio").style.display = "none";
+            document.getElementById("lang-folio").style.display = "none";
+            document.getElementById("about-folio").style.display = "block";
+            document.getElementById("contact-folio").style.display = "none";
+            closeform()
+        }
+        function contact() {
+            document.getElementById("home-folio").style.display = "none";
+            document.getElementById("edu-folio").style.display = "none";
+            document.getElementById("lang-folio").style.display = "none";
+            document.getElementById("about-folio").style.display = "none";
+            document.getElementById("contact-folio").style.display = "block";
+            closeform()
+        }
+        
+        function next(a) {
+            if (a == 0) {
+                education()
+            }
+            else if (a == 1) {
+                language()
+            }
+            else if (a == 2) {
+                about()
+            }
+            else if (a == 3) {
+                contact()
+            }
+            else if (a == 4) {
+                home()
+            }
+        }
+        function previous(a) {
+            if (a == 0) {
+                contact()
+            }
+            else if (a == 1) {
+                home()
+            }
+            else if (a == 2) {
+                education()
+            }
+            else if (a == 3) {
+                language()
+            }
+            else if (a == 4) {
+                about()
+            }
+        }
+
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    </script>
+    </body>
+</html>

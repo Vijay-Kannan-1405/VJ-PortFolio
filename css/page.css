@@ -1,0 +1,348 @@
+.main {
+   margin: 0px;
+   overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 9.8rem;
+    /* background-color: rgba(39, 170, 39, 0.486); */
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    /* background-image: url('image/bg.jpg'); */
+    background-color: #000000cc;
+}
+
+.header-stat {
+    left: 20rem;
+    position: fixed;
+    top: 0.3rem;
+    cursor: none;
+}
+
+.overview {
+    width: 13.5rem;
+    height: 30rem;
+    display: none;
+    background-color: rgb(209, 61, 61);
+    /* background-image: url('bg.jpg'); */
+    position: fixed;
+    left: 0.6rem;
+    top: 0.8rem;
+    box-shadow: 0.5rem 0rem 5rem #0f0f0f;
+    border-radius: 1.5rem;
+    /* animation-name: example;
+    animation-duration: 100s; */
+}
+
+/* @keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  } */
+
+.open-button {
+    top: 1rem;
+    left: 1rem;
+    position: fixed;
+}
+
+.close-button {
+    top: 1rem;
+    left: 10.7rem;
+    position: fixed;
+    /* background-color: rgba(111, 119, 83, 0.822); */
+}
+
+button {
+    background-color: transparent;
+    width: 2.8rem;
+    height: 2.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    /* padding: 15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    outline:none;
+    font-size: 1.6rem;
+    color: ivory;
+    /* color: blanchedalmond; */
+}
+
+.li-elements {
+    /* border: 1px solid black; */
+    width: 12rem;
+    /* background-image: url('bg.jpg'); */
+    /* padding-bottom: 3px; */
+    position: fixed;
+    top: 5rem;
+    left: 1.5rem;
+    /* height: 30%; */
+    /* left: 5px; */
+    list-style-type: none;
+    cursor: pointer;
+  }
+
+li {
+    border: 0.01rem solid black;
+    border-radius: 1rem;
+    height: 2.5rem;
+    text-align: center;
+    /* padding-top: 5rem; */
+    margin-bottom: 1.5rem;
+    box-shadow: 0rem 0.7rem 1rem #1a1919;
+    /* position: fixed; */
+    display: block;
+    color: #000;
+    padding: 8px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li:hover {
+  /* background-color: #555; */
+  background-image: url("image/bg.jpg");
+  color: white;
+}
+.header-image {
+    position: fixed;
+    left: 8rem;
+    top: 0.5rem;
+      /* width: 30px;
+      height: 50px; */
+      /* background-color: black; */
+}
+
+.imagevj {
+      width: 120px;
+      height: 145px;
+      border-radius: 50%;
+  }
+
+  .folio-main {
+      background-image: url('image/bg.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      width: 100%;
+      height: 90%;
+      /* border: 0.1rem solid whitesmoke; */
+  }
+
+  .folio {
+      border-radius: 5rem;
+      border-left: 0.4rem solid rgba(61, 60, 60, 0.63);
+      border-bottom: 0.4rem solid rgba(177, 173, 173, 0.151);
+      
+      /* box-shadow: inset 0px 0px 40px 40px #8b8a8786; */
+      background-color: #000000cc;
+      color: azure;
+      /* filter: blur(2px); */
+      /* min-width: 10px; */
+      width: 80rem;
+      /* max-width: 550px; */
+      height: 32rem;
+      position: fixed;
+      top: 11rem;
+      /* right: 2rem; */
+      left: 15.5rem;
+      /* background-color: rgba(233, 227, 227, 0.904); */
+      /* text-align: center; */
+      /* margin: auto;
+      display: block; */
+      /* font-size: large;
+      font-weight: bold; */
+      
+    }
+
+.home-folio {
+    display: block;
+    /* text-align: center; */
+    margin: 5rem;
+    /* list-style: square; */
+}
+.edu-folio {
+    display: none;
+    text-align: center;
+    margin: 10rem;
+}
+.lang-folio {
+    display: none;
+    text-align: center;
+    margin: 10rem;
+}
+.about-folio {
+    display: none;
+    text-align: center;
+    margin: 10rem;
+}
+.contact-folio {
+    display: none;
+    text-align: center;
+    margin: 10rem;
+}
+
+#myImg {
+    /* border-radius: 5px; */
+    /* border: 0.000001px solid black; */
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    /* z-index: 1; Sit on top */
+    /* padding-top: 0px; Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    overflow: hidden;
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 550px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 30px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+  .previous {
+    border: none;
+    /* background-color: rgba(233, 227, 227, 0.425); */
+    background-color: transparent;
+    /* height: 32rem; */
+    position: fixed;
+    top: 20rem;
+    left: 16rem;
+    width: 5rem;
+    /* border-radius: 0px; */
+    /* border-radius: 67px 0px 0px 67px; */
+    /* display: none; */
+    opacity: 0.001;
+    color: rgb(241, 241, 241);
+  }
+
+  .next {
+    border: none;
+    /* background-color: rgba(233, 227, 227, 0.425); */
+    background-color: transparent;
+    /* height: 31.5rem; */
+    position: fixed;
+    top: 20rem;
+    /* right: 0.1rem; */
+    left: 90.6rem;
+    width: 5rem;
+    /* border-radius: 0px; */
+    /* border-radius: 0px 67px 67px 0px;  */
+    /* display: none;   */
+    opacity: 0.001;
+    color: rgb(255, 255, 255);
+  }
+
+.next:hover {
+    /* display: block; */
+    /* background-color: black; */
+    opacity: 0.9;
+  }
+
+.previous:hover {
+    /* display: block; */
+    /* background-color: black; */
+    opacity: 0.9;
+}
+
+.folio, .home-folio, .edu-folio, .about-folio, .lang-folio, .contact-folio, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.9s;
+  animation-name: zoom;
+  animation-duration: 0.9s;
+}
+
+table {
+  /* color: white; */
+  /* border: 0.1rem solid white; */
+  /* list-style: symbols('#'); */
+  /* border-bottom: 0.5rem solid rgb(192, 190, 190); */
+}
+
+td {
+  list-style: symbols('#');
+  /* border-bottom: 00.001rem solid rgb(192, 190, 190); */
+  padding-top: 0.5rem;
+  padding-bottom: 00.3rem;
+  color: white;
+}
+
+.folio-h1 {
+  border: 00.1rem solid rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgba(150, 149, 146, 0.726);
+}
